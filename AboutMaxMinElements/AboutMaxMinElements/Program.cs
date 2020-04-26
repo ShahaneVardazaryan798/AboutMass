@@ -30,13 +30,13 @@ namespace AboutMaxMinElements
             }
             WriteLine("max=" + max+"\n");
             int min = 1;
-           for(int x=0;x<arr.Length;x++)
-           {
+            for(int x=0;x<arr.Length;x++)
+            {
              if(arr[x]<min)
              {
                     min = arr[x];
              }
-           }
+            }
             WriteLine("min=" + min + "\n");
             ReadLine();
             WriteLine("The sorted list is");
@@ -45,7 +45,7 @@ namespace AboutMaxMinElements
                 int iMin = a;
                 for(int b=a+1;b<k;b++)
                 {
-                    if(arr[b]<arr[iMin])
+                    if(arr[b]>arr[iMin])
                     {
                         iMin = b;  
                     }
@@ -55,6 +55,21 @@ namespace AboutMaxMinElements
                 arr[iMin] = temp;
                 Write(arr[a]+"\t");
             }
+            ReadLine();
+            WriteLine("Enter the number of Max");
+            int d = int.Parse(ReadLine());
+            for (int c = 0; c < arr.Length; c++)
+            {
+                 do
+                 {
+                    break;
+                 }
+                 while (c == d);
+                 WriteLine($"The {d}rd Max = " + arr[d-1]);
+                 ReadLine();
+            } 
+          
+
 
             
           
