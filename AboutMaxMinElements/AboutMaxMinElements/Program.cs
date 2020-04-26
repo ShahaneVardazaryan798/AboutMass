@@ -67,10 +67,10 @@ namespace AboutMaxMinElements
                  while (c == d);
                  WriteLine($"The {d}rd Max = " + arr[d-1]);
                  ReadLine();
-            } 
+            }
+            ReadLine();
+
           
-
-
             
           
 
